@@ -1,1 +1,6 @@
-# bo-samojlov-dmitrij-2
+# Личный проект "Design Life Kids"
+
+Учебный репозиторий студента Самойлова Дмитрия 2 модуль
+
+Студент [Самойлов Дмитрий] https://t.me/BeardBoy1987
+Наставник [Бельмесова Ольга] https://t.me/belmesovaoa
