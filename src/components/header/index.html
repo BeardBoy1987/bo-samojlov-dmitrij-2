@@ -1,12 +1,12 @@
 <header class="container mg-wrap">
 
-  @@if (type === "main" !== "blog","catalog","contacts","toys") {
-  <img class="header-logo" src="/static/images/logo.svg" alt="Design Life Kids" width="100" height="52">
-  }
-
-  @@if (type == "blog","catalog","contacts","toys" != "main") {
-    <a href="../../index.html"><img class="header-logo" src="/static/images/logo.svg" alt="Design Life Kids" width="100" height="52"></a>
-  }
+      @@if (type === "main") {
+      <img class="header-logo" src="/static/images/logo.svg" alt="Design Life Kids" width="100" height="52"/>
+      }
+    
+      @@if (type !== "main") {
+        <a href="../../index.html"><img class="header-logo" src="/static/images/logo.svg" alt="Design Life Kids" width="100" height="52"/></a>
+      }
 
   <nav class="header-nav">
     <ul class="header-navigation">
