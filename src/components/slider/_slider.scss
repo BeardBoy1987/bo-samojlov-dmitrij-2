@@ -1,0 +1,111 @@
+.mg-main-theme-container {
+  margin-top: 130px;
+}
+
+.slide-pagination {
+  margin-top: 20px;
+  margin-left: 36px;
+}
+
+.main-theme {
+  background: #eee4db;
+  min-height: 411px;
+  position: relative;
+}
+
+.slide-counter {
+  font-family: "Montserrat", "Verdana", sans-serif;
+  font-size: 60px;
+  line-height: 73px;
+  color: rgba(30, 6, 6, 0.05);
+}
+
+.main-theme-menu-item:first-child .main-theme-menu-button {
+  background-color: rgba(30, 6, 6, 0.6);
+}
+
+.main-theme-menu-button-head:hover {
+  cursor: pointer;
+}
+
+.main-theme-menu-button {
+  width: 31px;
+  height: 3px;
+  border: none;
+  outline: none;
+  background-color: #d6cac2;
+}
+
+.main-theme-menu-button:hover,
+.main-theme-menu-button:focus {
+  background-color: rgba(30, 6, 6, 0.6);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.slide-info {
+  display: flex;
+  flex-direction: column;
+  max-width: 70%;
+  min-width: 311px;
+}
+
+.slide-heading {
+  font-family: "Montserrat", "Verdana", sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 44px;
+  text-transform: uppercase;
+  color: #1e0606;
+  margin-top: 90px;
+  margin-left: 37px;
+  margin-bottom: 20px;
+  max-width: 70%;
+}
+
+.design {
+  font-family: "Crimson Text", "Palatino", serif;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 25px;
+  color: #1e0606;
+  margin-left: 40px;
+  max-width: 100%;
+}
+
+.slide-img-wrapper {
+  position: relative;
+  align-self: flex-end;
+  right: -350px;
+  width: 100%;
+  max-width: 636px;
+  margin-top: -130px;
+  min-width: 326px;
+  height: 243px;
+}
+
+.slide-img {
+  position: absolute;
+  width: 100%;
+  width: 636px;
+  height: 489px;
+  bottom: 0;
+}
+
+.shipping {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #c29974;
+  position: absolute;
+  padding: 11px;
+  bottom: 0px;
+  margin: 0 auto;
+  width: 100%;
+  height: max-content;
+}

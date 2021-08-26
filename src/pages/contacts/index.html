@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+  <link href="/common.css" rel="stylesheet" />
+  <link href="style.css" rel="stylesheet" />
+  <link rel="shortcut icon" href="/static/images/favicon.ico" />
+  <title>Contact Us</title>
+</head>
+
+<body>
+  @@include('header/index.html' {
+    type:"contacts",
+  }
+  )
+
+  <main>
+
+    <section class="heading container">
+      <h1>contact us</h1>
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs-item"><a class="breadcrumbs-item-link" href="../../index.html">Home</a></li>
+        <li class="breadcrumbs-item">Contact Us</li>
+      </ul>
+    </section>
+
+
+    <div class="main-content-wrapper container">
+
+      <form class="contact-form" name="form" action="#" method="post">
+
+        <fieldset class="main-form">
+          <fieldset class="input-wrap">
+            <label for="name">Name</label>
+            <input placeholder="ivan ivanov" class="input name-input" name="name" type="text" id="name" />
+          </fieldset>
+
+          <div class="contact-info">
+            <fieldset class="input-wrap">
+              <label for="phone">Phone</label>
+              <input class="input contact-input" name="phone" type="text" id="phone" />
+            </fieldset>
+
+            <fieldset class="input-wrap">
+              <label for="contact-email">Email</label>
+              <input class="input contact-input" name="email" type="text" id="contact-email" />
+            </fieldset>
+          </div>
+
+          <fieldset class="input-wrap">
+            <label for="message">Message</label>
+            <textarea name="message" id="message"></textarea>
+          </fieldset>
+
+          <fieldset>
+            <input class="checkbox" checked type="checkbox" name="info" id="agree" value="">
+            <label class="checkbox-label" for="agree">By clicking on the button, you
+              consent to the
+              processing
+              of your personal data</label>
+          </fieldset>
+
+          <fieldset>
+            @@include('button/index.html', {
+              text:"submit",
+              class:"submit-btn",
+              type:"button",
+              disabled:"no",
+            }
+            )
+          </fieldset>
+        </fieldset>
+
+      </form>
+
+      <div class="info">
+        <p class="info-text">Our support team are on-hand to assist with any issues you are experiencing.</p>
+        <p class="info-text">Please use the form to contact us with your needs. Send us a message and we'll respond as
+          soon as possible.
+        </p>
+        <p class="uppercase-text">an expert is waiting to help you!</p>
+      </div>
+    </div>
+
+  </main>
+
+  @@include('footer/index.html')
+</body>
+
+</html>

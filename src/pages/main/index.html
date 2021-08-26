@@ -1,44 +1,137 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    />
-    <link href="/common.css" rel="stylesheet" />
-    <link href="style.css" rel="stylesheet" />
-    <link rel="stylesheet" href="/static/fonts/oswald.css" />
-    <link rel="shortcut icon" href="/static/images/favicon.ico">
-    <title>Главная</title>
-  </head>
-  <body>
-    @@include('header/index.html')
-    <main class="index-main">
-      <div class="container">
-        <h1 class="title-block title-block_one">Главная</h1>
-        <h2 class="title-block title-block_two">
-          Вы находитесь на главной странице
-        </h2>
-        <div class="parallax-card">
-          <div class="parallax-card__wrapper-img">
-            <img
-              class="parallax-card__img"
-              src="static/images/cactus.jpg"
-              alt="Картинка кактуса"
-            />
-          </div>
+<html lang="en">
 
-          <div class="parallax-card__description">
-            <p class="parallax-card__paragraph">Кактус маминой подруги</p>
-            <p class="parallax-card__paragraph">
-              Не нужно поливать и никогда не сохнет
-            </p>
-          </div>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@300;700&family=Open+Sans:wght@400;700&family=Roboto&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+  <link href="common.css" rel="stylesheet" />
+  <link href="style.css" rel="stylesheet" />
+  <link rel="shortcut icon" href="/static/images/favicon.ico">
+  <title>Design Life Kids</title>
+</head>
+
+<body>
+  @@include('header/index.html', {
+    type:"main",
+  }
+  )
+
+  <main>
+    @@include('slider/index.html')
+    <section class="catalog mg-catalog">
+      <h2 class="category-heading">category products</h2>
+      <div class="container">
+        <ul class="products-list">
+          <li class="products-list-item product-img-1"><a class="products-list-item-link" href="#"><img
+                src="/static/images/apparel_kids.png" alt="sweater" width="280" height="270">
+              <span class="products-list-item-link-text">apparel kids</span>
+            </a></li>
+          <li class="products-list-item product-img-2"><a class="products-list-item-link" href="#"><img
+                src="/static/images/holiday_shop.png" alt="holiday-sock" width="280" height="270">
+              <span class="products-list-item-link-text">holiday shop</span>
+            </a></li>
+          <li class="products-list-item product-img-3"><a class="products-list-item-link"
+              href="./pages/catalog/detail.html"><img src="/static/images/toys.png" alt="deer" width="280" height="270">
+              <span class="products-list-item-link-text">toys</span>
+            </a></li>
+          <li class="products-list-item product-img-4"><a class="products-list-item-link" href="#"><img
+                src="/static/images/accessories.png" alt="skater" width="280" height="270">
+              <span class="products-list-item-link-text">accessories</span>
+            </a></li>
+          <li class="products-list-item product-img-5"><a class="products-list-item-link hidden" href="#"><img
+                src="/static/images/sale.png" alt="flamingo" width="280" height="270">
+              <span class="products-list-item-link-text">sale</span>
+            </a></li>
+          <li class="products-list-item product-img-6"><a class="products-list-item-link hidden" href="#"><img
+                src="/static/images/apparel_adults.png" alt="dress" width="280" height="270">
+              <span class="products-list-item-link-text">apparel adults</span>
+            </a></li>
+        </ul>
       </div>
-    </main>
-    @@include('footer/index.html')
-    <script src="scripts.js"></script>
-  </body>
+      <div class="catalog-others container">
+        <button type="button" class="arrow-btn"><img class="arrow-img" src="/static/images/left_arrow.svg" alt="arrow" width="25"
+            height="30"></button>
+        <button type="button" class="arrow-btn"><img class="arrow-img" src="/static/images/right_arrow.svg" alt="arrow" width="25"
+            height="30"></button>
+        <p class="product-description">Modern finds for the modern home. Curated goods by unique designers around the
+          world from fashion to
+          furniture for kids and adults.</p>
+      </div>
+    </section>
+    <section class="delivery container mg-delivery">
+      <img class="delivery-img" src="/static/images/woman.jpg" alt="woman" width="480" height="559">
+      <div class="delivery-info">
+        <h2 class="delivery-heading">delivery</h2>
+        <ul class="delivery-list">
+          <li class="delivery-list-item"><a class="delivery-list-item-link-active" href="#">Delivery</a></li>
+          <li class="delivery-list-item"><a class="delivery-list-item-link" href="#">Guarantee</a></li>
+          <li class="delivery-list-item"><a class="delivery-list-item-link" href="#">Credit</a></li>
+        </ul>
+        <p class="delivery-description">Some days i feel like i've been working on dlk my entire life and there are
+          other
+          days that i am completely
+          shocked that four years have flown by. It's simply magical.</p>
+        <p class="delivery-description">What started as an outlet to deal with the traumatic loss of my husband, dlk has
+          now become a truly happy
+          place for me and i have you and all of the beautiful designers that we work with to thank!</p>
+          @@include('button/index.html', {
+            text:"learn more",
+            class:"learn-btn",
+            type:"button",
+            disabled:"no",
+          }
+          )
+      </div>
+    </section>
+    <div class="partners container mg-partners">
+      <ul class="partners-list">
+        <li class="partners-list-item"><a class="partners-list-item-link" href="https://mail.ru/" target="_blank"><img
+              src="/static/images/mail_logo.svg" alt="mail-logo" width="193" height="60"></a></li>
+        <li class="partners-list-item"><a class="partners-list-item-link" href="https://www.apple.com/"
+            target="_blank"><img src="/static/images/apple_logo.svg" alt="apple-logo" width="179" height="61"></a></li>
+        <li class="partners-list-item"><a class="partners-list-item-link" href="https://eltex-co.ru/" target="_blank"><img
+              src="/static/images/eltex_logo.svg" alt="eltex-logo" width="216" height="46"></a></li>
+        <li class="partners-list-item"><a class="partners-list-item-link" href="https://www.owox.ru/" target="_blank"><img
+              src="/static/images/owox_logo.svg" alt="owox-logo" width="211" height="40"></a></li>
+      </ul>
+    </div>
+    <div class="about-and-map container">
+      <section class="about-us">
+        <h2 class="dlk-head">design life kids</h2>
+        <span class="about-heading">About Us</span>
+        <p class="about-info">Some days i feel like i've been working on dlk my entire life and there are other days
+          that
+          i am completely
+          shocked that four years have flown by. It's simply magical.</p>
+          @@include('button/index.html', {
+            text:"buy now",
+            type:"button",
+            disabled:"no",
+          }
+          )
+      </section>
+      <section class="contacts">
+        <h2 class="contact-head">contacts</h2>
+        <p class="contacts-info">Some days i feel like i've been working on dlk my entire life and there are other days
+          that i am completely
+          shocked that four years have flown by. It's simply magical.</p>
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4459.839408748485!2d-122.41890623333398!3d37.776382125321575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808580a196ede719%3A0x2fb5607634331f2f!2zSGF5ZXMgVmFsbGV5LCDQodCw0L0t0KTRgNCw0L3RhtC40YHQutC-LCDQmtCw0LvQuNGE0L7RgNC90LjRjyA5NDEwMiwg0KHQqNCQ!5e0!3m2!1sru!2sro!4v1624273412145!5m2!1sru!2sro"
+            title="map" width="483" height="196" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  @@include('footer/index.html')
+  @@include('popup-window/index.html')
+  <script src="scripts.js"></script>
+</body>
+
 </html>

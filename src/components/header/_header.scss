@@ -1,24 +1,99 @@
-header {
-  background-color: #89f7fe;
-  height: 80px;
-  display: flex;
-  align-items: center;
-
-  span {
-    padding-right: 20px;
-  }
-
-  a {
-    color: #000;
-    text-decoration: none;
-
-    &:not(:last-child) {
-      margin-right: 20px;
-    }
-    &:hover {
-      border-bottom: 1px solid #000;
-    }
-  }
+.mg-wrap {
+  margin-top: 50px;
 }
 
+.logo-link:hover,
+.logo-link:focus {
+  opacity: 0.5;
+}
 
+.logo-link:active {
+  opacity: 0.3;
+}
+
+.header-logo {
+  align-items: flex-end;
+}
+
+.header-nav {
+  margin-left: 40px;
+}
+
+.header-navigation {
+  display: flex;
+  align-items: center;
+}
+
+.header-navigation-item {
+  padding-left: 22px;
+}
+
+.header-navigation-link {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #1e0606;
+}
+
+.header-navigation-link:hover,
+.header-navigation-link:focus {
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+.header-navigation-link:active {
+  opacity: 0.3;
+}
+
+.contact-us {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.contact-us-link {
+  padding-left: 16px;
+}
+
+.search-btn:hover,
+.search-btn:focus {
+  opacity: 0.5;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.search-btn:active {
+  opacity: 0.3;
+}
+
+.search-btn:disabled {
+  opacity: 0.1;
+}
+
+.search-btn {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.contact-us-link {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #1e0606;
+}
+
+.contact-us-link:hover,
+.contact-us-link:focus {
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+.contact-us-link:active {
+  opacity: 0.3;
+}

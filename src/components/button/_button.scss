@@ -1,0 +1,45 @@
+.button {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #000000;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s;
+  max-width: 161px;
+  padding: 9px 22px 9px 22px;
+
+&:hover,
+&:focus {
+  background-color: #c29974;
+}
+
+&:active {
+  background-color: #cfaf91;
+}
+
+&:disabled {
+  background-color: #c7c1c1;
+}
+
+}
+
+.explore-btn {
+  margin-left: 40px;
+  margin-top: 20px;
+}
+
+.learn-btn {
+  margin-top: 10px;
+}
+
+.submit-btn {
+  margin-top: 1px;
+  margin-left: 15px;
+}
+
+.apply-btn {
+  position: relative;
+  top: 35px;
+}

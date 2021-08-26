@@ -1,28 +1,80 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    />
-    <link href="/common.css" rel="stylesheet" />
-    <link href="style.css" rel="stylesheet" />
-    <link rel="stylesheet" href="/static/fonts/oswald.css" />
-    <link rel="shortcut icon" href="/static/images/favicon.ico">
-    <title>Каталог</title>
-  </head>
-  <body>
-    @@include('header/index.html')
-    <main class="catalog-main">
-      <div class="container">
-        <h1 class="title-block title-block_one">Каталог</h1>
-        <h2 class="title-block title-block_two">
-          Вы находитесь на странице каталога
-        </h2>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@700&family=Open+Sans:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+  <link href="/common.css" rel="stylesheet" />
+  <link href="style.css" rel="stylesheet" />
+  <link rel="shortcut icon" href="/static/images/favicon.ico">
+  <title>Каталог</title>
+</head>
+
+<body>
+  @@include('header/index.html' {
+    type:"catalog",
+  }
+  )
+  <main>
+    <section class="catalog">
+      <div class="heading container">
+        <h1>category products</h1>
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs-item"><a class="breadcrumbs-item-link" href="../../index.html">Home</a></li>
+          <li class="breadcrumbs-item">Catalog</li>
+        </ul>
       </div>
-    </main>
-    @@include('footer/index.html')
-    <script src="index.js"></script>
-  </body>
+
+      <ul class="category-list-1 container">
+        <li class="category-list-item product-img-1"><a class="category-list-item-link" href="#"><img
+              src="../../static/images/apparel_kids.png" alt="sweater" width="280" height="270">
+            <span class="category-list-item-link-text">apparel kids</span>
+          </a></li>
+        <li class="category-list-item product-img-2"><a class="category-list-item-link" href="#"><img
+              src="../../static/images/holiday_shop.png" alt="holiday-sock" width="280" height="270">
+            <span class="category-list-item-link-text">holiday shop</span>
+          </a></li>
+        <li class="category-list-item product-img-3"><a class="category-list-item-link" href="../toys/index.html"><img
+              src="../../static/images/toys.png" alt="deer" width="280" height="270">
+            <span class="category-list-item-link-text">toys</span>
+          </a></li>
+      </ul>
+      <ul class="category-list-2 container">
+        <li class="category-list-item product-img-4"><a class="category-list-item-link" href="#"><img
+              src="../../static/images/accessories.png" alt="skater" width="280" height="270">
+            <span class="category-list-item-link-text">accessories</span>
+          </a></li>
+        <li class="category-list-item product-img-5"><a class="category-list-item-link" href="#"><img
+              src="../../static/images/sale.png" alt="flamingo" width="280" height="270">
+            <span class="category-list-item-link-text">sale</span>
+          </a></li>
+        <li class="category-list-item product-img-6"><a class="category-list-item-link" href="#"><img
+              src="../../static/images/apparel_adults.png" alt="dress" width="280" height="270">
+            <span class="category-list-item-link-text">apparel adults</span>
+          </a></li>
+      </ul>
+    </section>
+
+    <section class="description container">
+      <h2>product description</h2>
+      <p class="description-text">Interactive doll Zapf Creation Baby Born Sister can drink from a bottle and almost
+        really cry. You can
+        even bathe her, just like a little sister.</p>
+      <p class="description-text">A toy with a height of 43 cm bends its knees, the head rotates, it can stand upright.
+        Such a doll will
+        be an excellent choice for a gift for a girl from 4 years old.</p>
+      <p class="description-text">The set includes a miniature set of fashionable clothes, a hairbrush, a bottle for
+        water, a pair of
+        hairpins and elastic bands for hair, as well as two bracelets: one for the doll, the other for her
+        young mistress.</p>
+    </section>
+  </main>
+  @@include('footer/index.html')
+</body>
+
 </html>

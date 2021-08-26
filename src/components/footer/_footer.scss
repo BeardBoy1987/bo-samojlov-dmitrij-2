@@ -1,22 +1,261 @@
+.footer-container {
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
 footer {
-  background-color: #ffd042;
-  height: 80px;
+  background-color: #434343;
+}
+
+/* h3 font style */
+
+h3 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #aaaaaa;
+}
+
+/* footer navigation */
+
+.footer-nav {
+  margin-top: 90px;
+  width: 100%;
+  width: 380px;
+}
+
+.footer-navigation {
+  border-top: 1px solid #666666;
+  margin-top: 23px;
+  padding-top: 28px;
+}
+
+.footer-navigation-item {
+  padding-bottom: 15px;
+}
+
+.footer-navigation a {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.footer-navigation a:hover,
+a:focus {
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+.footer-navigation a:active {
+  opacity: 0.2;
+}
+
+/* customer info */
+
+.customer-info {
+  margin-top: 90px;
+  width: 100%;
+  width: 380px;
+}
+
+.footer-additional-list {
+  border-top: 1px solid #666666;
+  margin-top: 23px;
+  padding-top: 28px;
+}
+
+.footer-additional-list-item {
+  padding-bottom: 15px;
+}
+
+.footer-additional-list-item a {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.footer-additional-list-item a:hover,
+a:focus {
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+.footer-additional-list-item a:active {
+  opacity: 0.2;
+}
+
+/* connect */
+
+.connect {
+  margin-top: 90px;
+  width: 380px;
+}
+
+.email-submit {
+  display: flex;
+  border-top: 1px solid #666666;
+  margin-top: 23px;
+  padding-top: 28px;
+}
+
+.connect input {
+  width: 380px;
+  width: 100%;
+  height: 40px;
+  padding: 15px 9px 9px;
+  background-color: #666666;
+  border: transparent 1px solid;
+}
+
+.connect input:hover,
+input:focus {
+  border: solid 1px #ffffff;
+  transition: 0.5s;
+}
+
+.connect input::placeholder {
+  font-family: "Open Sans", "Arial", sans-serif;
+  padding-left: 15px;
+  padding: 0px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ebebeb;
+}
+
+/* social list */
+
+.footer-social-list {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-social-list-item {
+  margin-right: 10px;
+}
+
+.footer-social-list-item:hover,
+.footer-social-list-item:focus {
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+.footer-social-list-item:active {
+  opacity: 0.3;
+}
+
+/* additional info */
+
+.additional-info {
   display: flex;
   align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  margin-bottom: 100px;
+  border-top: 1px solid #666666;
+}
 
-  span {
-    padding-right: 20px;
-  }
+.rate,
+.copyright {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+}
 
-  a {
-    color: #000;
-    text-decoration: none;
+.copyright {
+  margin-top: 10px;
+  margin-left: 167px;
+}
 
-    &:not(:last-child) {
-      margin-right: 20px;
-    }
-    &:hover {
-      border-bottom: 1px solid #000;
-    }
-  }
+.rate {
+  margin-right: 25px;
+}
+
+.rating-area:hover + .rate {
+  color: #c29974;
+  transition: 0.5s;
+}
+
+.company-rating {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+/* rating stars */
+
+.rating-area {
+  display: inline-flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+.rating-area:not(:checked) > input {
+  display: none;
+}
+
+.rating-area:not(:checked) > label {
+  float: right;
+  width: 16px;
+  padding: 14px;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 32px;
+  color: lightgrey;
+}
+
+.rating-area:not(:checked) > label:before {
+  content: "★";
+}
+
+.rating-area > input:checked ~ label {
+  color: #c29974;
+  text-shadow: 1px 1px #c29974;
+}
+
+.rating-area:not(:checked) > label:hover,
+.rating-area:not(:checked) > label:hover ~ label {
+  color: #c29974;
+  transition: 0.5s;
+}
+
+.rating-area > input:checked + label:hover,
+.rating-area > input:checked + label:hover ~ label,
+.rating-area > input:checked ~ label:hover,
+.rating-area > input:checked ~ label:hover ~ label,
+.rating-area > label:hover ~ input:checked ~ label {
+  color: #c29974;
+  text-shadow: 1px 1px #c29974;
+}
+
+.rate-area > label:active {
+  position: relative;
+}
+
+.dl-link {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #a2a2a2;
+}
+
+.dl-link {
+  margin-top: 10px;
+  margin-left: 115px;
+}
+
+.dl-link:hover,
+.dl-link:focus,
+.dl-link:active {
+  color: #ffffff;
+  text-decoration: underline;
+  transition: 0.5s;
 }
