@@ -17,52 +17,13 @@
 
 <body>
   @@include('header/index.html', {
-    type: "main",
+    type:"main",
   }
   )
 
   <main>
     @@include('slider/index.html')
-    <section class="catalog mg-catalog">
-      <h2 class="category-heading">category products</h2>
-      <div class="container">
-        <ul class="products-list">
-          <li class="products-list-item product-img-1"><a class="products-list-item-link" href="#"><img
-                src="/static/images/apparel_kids.png" alt="sweater" width="280" height="270">
-              <span class="products-list-item-link-text">apparel kids</span>
-            </a></li>
-          <li class="products-list-item product-img-2"><a class="products-list-item-link" href="#"><img
-                src="/static/images/holiday_shop.png" alt="holiday-sock" width="280" height="270">
-              <span class="products-list-item-link-text">holiday shop</span>
-            </a></li>
-          <li class="products-list-item product-img-3"><a class="products-list-item-link"
-              href="./pages/catalog/detail.html"><img src="/static/images/toys.png" alt="deer" width="280" height="270">
-              <span class="products-list-item-link-text">toys</span>
-            </a></li>
-          <li class="products-list-item product-img-4"><a class="products-list-item-link" href="#"><img
-                src="/static/images/accessories.png" alt="skater" width="280" height="270">
-              <span class="products-list-item-link-text">accessories</span>
-            </a></li>
-          <li class="products-list-item product-img-5"><a class="products-list-item-link hidden" href="#"><img
-                src="/static/images/sale.png" alt="flamingo" width="280" height="270">
-              <span class="products-list-item-link-text">sale</span>
-            </a></li>
-          <li class="products-list-item product-img-6"><a class="products-list-item-link hidden" href="#"><img
-                src="/static/images/apparel_adults.png" alt="dress" width="280" height="270">
-              <span class="products-list-item-link-text">apparel adults</span>
-            </a></li>
-        </ul>
-      </div>
-      <div class="catalog-others container">
-        <button type="button" class="arrow-btn"><img class="arrow-img" src="/static/images/left_arrow.svg" alt="arrow" width="25"
-            height="30"></button>
-        <button type="button" class="arrow-btn"><img class="arrow-img" src="/static/images/right_arrow.svg" alt="arrow" width="25"
-            height="30"></button>
-        <p class="product-description">Modern finds for the modern home. Curated goods by unique designers around the
-          world from fashion to
-          furniture for kids and adults.</p>
-      </div>
-    </section>
+    @@include('catalog/index.html')
     <section class="delivery container mg-delivery">
       <img class="delivery-img" src="/static/images/woman.jpg" alt="woman" width="480" height="559">
       <div class="delivery-info">

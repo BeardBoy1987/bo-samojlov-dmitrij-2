@@ -41,12 +41,12 @@ h3 {
   font-size: 16px;
   line-height: 22px;
   color: #ffffff;
+  transition: 0.5s;
 }
 
 .footer-navigation a:hover,
 a:focus {
   opacity: 0.5;
-  transition: 0.5s;
 }
 
 .footer-navigation a:active {
@@ -77,12 +77,12 @@ a:focus {
   font-size: 16px;
   line-height: 22px;
   color: #ffffff;
+  transition: 0.5s;
 }
 
 .footer-additional-list-item a:hover,
 a:focus {
   opacity: 0.5;
-  transition: 0.5s;
 }
 
 .footer-additional-list-item a:active {
@@ -110,12 +110,12 @@ a:focus {
   padding: 15px 9px 9px;
   background-color: #666666;
   border: transparent 1px solid;
+  transition: 0.5s;
 }
 
 .connect input:hover,
 input:focus {
   border: solid 1px #ffffff;
-  transition: 0.5s;
 }
 
 .connect input::placeholder {
@@ -137,12 +137,12 @@ input:focus {
 
 .footer-social-list-item {
   margin-right: 10px;
+  transition: 0.5s;
 }
 
 .footer-social-list-item:hover,
 .footer-social-list-item:focus {
   opacity: 0.5;
-  transition: 0.5s;
 }
 
 .footer-social-list-item:active {
@@ -176,11 +176,11 @@ input:focus {
 
 .rate {
   margin-right: 25px;
+  transition: 0.5s;
 }
 
 .rating-area:hover + .rate {
   color: #c29974;
-  transition: 0.5s;
 }
 
 .company-rating {
@@ -213,6 +213,7 @@ input:focus {
 
 .rating-area:not(:checked) > label:before {
   content: "★";
+  transition: 0.5s;
 }
 
 .rating-area > input:checked ~ label {
@@ -223,7 +224,6 @@ input:focus {
 .rating-area:not(:checked) > label:hover,
 .rating-area:not(:checked) > label:hover ~ label {
   color: #c29974;
-  transition: 0.5s;
 }
 
 .rating-area > input:checked + label:hover,
@@ -245,9 +245,6 @@ input:focus {
   font-size: 16px;
   line-height: 22px;
   color: #a2a2a2;
-}
-
-.dl-link {
   margin-top: 10px;
   margin-left: 115px;
 }
@@ -257,5 +254,4 @@ input:focus {
 .dl-link:active {
   color: #ffffff;
   text-decoration: underline;
-  transition: 0.5s;
 }

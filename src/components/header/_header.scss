@@ -2,6 +2,10 @@
   margin-top: 50px;
 }
 
+.logo-link {
+  transition: 0.5s;
+}
+
 .logo-link:hover,
 .logo-link:focus {
   opacity: 0.5;
@@ -35,12 +39,12 @@
   line-height: 19px;
   text-transform: uppercase;
   color: #1e0606;
+  transition: 0.5s;
 }
 
 .header-navigation-link:hover,
 .header-navigation-link:focus {
   opacity: 0.5;
-  transition: 0.5s;
 }
 
 .header-navigation-link:active {
@@ -61,7 +65,6 @@
 .search-btn:focus {
   opacity: 0.5;
   cursor: pointer;
-  transition: 0.5s;
 }
 
 .search-btn:active {
@@ -76,6 +79,7 @@
   border: none;
   outline: none;
   background: transparent;
+  transition: 0.5s;
 }
 
 .contact-us-link {
@@ -86,12 +90,12 @@
   line-height: 19px;
   text-transform: uppercase;
   color: #1e0606;
+  transition: 0.5s;
 }
 
 .contact-us-link:hover,
 .contact-us-link:focus {
   opacity: 0.5;
-  transition: 0.5s;
 }
 
 .contact-us-link:active {

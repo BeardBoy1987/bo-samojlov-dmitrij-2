@@ -34,27 +34,27 @@
 
     <div class="main-content-wrapper container">
 
-      <form class="contact-form" name="form" action="#" method="post">
+      <form class="contact-us-form" name="form" action="#" method="post">
 
-        <fieldset class="main-form">
-          <fieldset class="input-wrap">
+        <fieldset class="contact-us-main-form">
+          <fieldset class="contact-us-input-wrap">
             <label for="name">Name</label>
             <input placeholder="ivan ivanov" class="input name-input" name="name" type="text" id="name" />
           </fieldset>
 
-          <div class="contact-info">
-            <fieldset class="input-wrap">
+          <div class="contact-us-contact-info">
+            <fieldset class="contact-us-input-wrap">
               <label for="phone">Phone</label>
               <input class="input contact-input" name="phone" type="text" id="phone" />
             </fieldset>
 
-            <fieldset class="input-wrap">
+            <fieldset class="contact-us-input-wrap">
               <label for="contact-email">Email</label>
               <input class="input contact-input" name="email" type="text" id="contact-email" />
             </fieldset>
           </div>
 
-          <fieldset class="input-wrap">
+          <fieldset class="contact-us-input-wrap">
             <label for="message">Message</label>
             <textarea name="message" id="message"></textarea>
           </fieldset>
@@ -70,7 +70,6 @@
           <fieldset>
             @@include('button/index.html', {
               text:"submit",
-              class:"submit-btn",
               type:"button",
               disabled:"no",
             }
