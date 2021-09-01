@@ -8,6 +8,7 @@
   cursor: pointer;
   transition: 0.5s;
   max-width: 161px;
+  min-height: 40px;
   padding: 9px 22px 9px 22px;
 
 &:hover,
@@ -31,6 +32,7 @@
 }
 
 .learn-btn {
+  width: 149px;
   margin-top: 10px;
 }
 

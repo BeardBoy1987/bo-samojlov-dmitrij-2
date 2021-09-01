@@ -27,7 +27,7 @@
   margin-left: 20px;
 }
 
-.arrow-btn {
+.carousel-arrow-btn {
   width: 37px;
   height: 37px;
   border: none;
@@ -37,12 +37,12 @@
   transition: 0.5s;
 }
 
-.arrow-btn:hover,
-.arrow-btn:focus {
+.carousel-arrow-btn:hover,
+.carousel-arrow-btn:focus {
   cursor: pointer;
   opacity: 0.5;
 }
 
-.arrow-btn:active {
+.carousel-arrow-btn:active {
   opacity: 0.2;
 }

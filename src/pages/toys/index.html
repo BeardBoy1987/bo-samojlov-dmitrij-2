@@ -1,179 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap"
     rel="stylesheet">
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    />
-    <link href="/common.css" rel="stylesheet"/>
-    <link href="style.css" rel="stylesheet"/>
-    <link rel="shortcut icon" href="/static/images/favicon.ico"/>
-    <title>Игрушки</title>
-  </head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+  <link href="/common.css" rel="stylesheet" />
+  <link href="style.css" rel="stylesheet" />
+  <link rel="shortcut icon" href="/static/images/favicon.ico" />
+  <title>Игрушки</title>
+</head>
 
-  <body> 
-    @@include('header/index.html', {
-      type:"toys",
-    }
-    )
-
-    <main>
-    <section class="heading container">
-      <h1>toy for kids</h1>
-      <ul class="breadcrumbs">
-        <li class="breadcrumbs-item"><a class="breadcrumbs-item-link" href="../../index.html">Home</a></li>
-        <li class="breadcrumbs-item"><a class="breadcrumbs-item-link" href="../catalog/index.html">Catalog</a></li>
-        <li class="breadcrumbs-item">Toys</li>
-      </ul>
-    </section>
-
-    <form class="filtr" action="#" method="post">
-      <div class="filtr-content container">
-
-        <fieldset class="cost">
-          <legend>Cost</legend>
-          <input type="range" min="0" max="500" value="150" class="cost-range" aria-label="cost-slide">
-          <div class="range-value">
-            <span>0</span>
-            <span>500</span>
-          </div>
-        </fieldset>
-
-        <fieldset class="color">
-          <legend>Color</legend>
-          <ul class="checkbox-list">
-            <li class="checkbox-list-item">
-              <input class="checkbox" checked type="checkbox" name="black" value="black" id="black-color">
-              <label class="checkbox-label" for="black-color">Black</label>
-            </li>
-            <li class="checkbox-list-item">
-              <input class="checkbox" type="checkbox" name="blue" value="blue" id="blue-color">
-              <label class="checkbox-label" for="blue-color">Blue</label>
-            </li>
-            <li class="checkbox-list-item">
-              <input class="checkbox" type="checkbox" name="green" value="green" id="green-color">
-              <label class="checkbox-label" for="green-color">Green</label>
-            </li>
-            <li class="checkbox-list-item">
-              <input class="checkbox" type="checkbox" name="white" value="white" id="white-color">
-              <label class="checkbox-label" for="white-color">White</label>
-            </li>
-          </ul>
-        </fieldset>
-
-        <fieldset class="delivery">
-          <legend class="delivery-heading">Delivery</legend>
-          <ul class="delivery-radio-list">
-            <li class="delivery-radio-list-item">
-              <input class="delivery-radio radio-btn" type="radio" name="shipping" value="free" id="free-shipping">
-              <label class="delivery-radio-label" for="free-shipping">Free shipping</label>
-            </li>
-            <li class="radio-list-item">
-              <input class="delivery-radio radio-btn" checked type="radio" name="shipping" value="fast"
-                id="fast-shipping">
-              <label class="delivery-radio-label" for="fast-shipping">Fast shipping</label>
-            </li>
-          </ul>
-        </fieldset>
-
-        <fieldset class="amount">
-          <legend class="amount-heading">Amount</legend>
-          <ul class="amount-radio-list">
-            <li class="amount-radio-list-item">
-              <input class="amount-radio radio-btn" checked type="radio" name="quantity" value="0-10" id="0-10">
-              <label class="amount-radio-label" for="0-10">0-10</label>
-            </li>
-            <li class="amount-radio-list-item">
-              <input class="amount-radio radio-btn" type="radio" name="quantity" value="10-20" id="10-20">
-              <label class="amount-radio-label" for="10-20">10-20</label>
-            </li>
-            <li class="amount-radio-list-item">
-              <input class="amount-radio radio-btn" type="radio" name="quantity" value="20-50" id="20-50">
-              <label class="amount-radio-label" for="20-50">20-50</label>
-            </li>
-          </ul>
-        </fieldset>
-
-        @@include('button/index.html', {
-          text:"apply",
-          class:"apply-btn",
-          type:"button",
-          disabled:"no",
-        }
-        )
-
-      </div>
-    </form>
-
-    <section class="product container">
-      <ul class="product-list">
-        <li class="product-list-item">
-          <a class="product-card">
-            <img class="product-img" src="../../static/images/puff_shark.png" alt="shark-bag" width="380" height="385">
-            <h2>sharky bean bag chair cover</h2>
-            <span class="price">&dollar;60.00 USD</span>
-          </a>
-        </li>
-        <li class="product-list-item">
-          <a class="product-card">
-            <img class="product-img" src="../../static/images/brass.png" alt="brass" width="380" height="385">
-            <h2>brass deco frames</h2>
-            <span class="price">&dollar;66.00 USD</span>
-          </a>
-        </li>
-        <li class="product-list-item">
-          <a class="product-card">
-            <img class="product-img" src="../../static/images/cibo.png" alt="cibo" width="380" height="385">
-            <h2>cibo full apron</h2>
-            <span class="price">&dollar;60.00 USD</span>
-          </a>
-        </li>
-        <li class="product-list-item">
-          <a class="product-card">
-            <img class="product-img" src="../../static/images/bubblegum_machine.png" alt="bubblegum-machine" width="380"
-              height="385">
-            <h2>gatcha gatcha gumball machine</h2>
-            <span class="price">&dollar;56.00 USD</span>
-          </a>
-        </li>
-        <li class="product-list-item">
-          <a class="product-card">
-            <img class="product-img" src="../../static/images/candle.png" alt="candle" width="380" height="385">
-            <h2>christmas advent scented candle</h2>
-            <span class="price">&dollar;29.00 USD</span>
-          </a>
-        </li>
-        <li class="product-list-item">
-          <a class="product-card">
-            <img class="product-img" src="../../static/images/tangle_light.png" alt="tangle-light" width="380" height="382">
-            <h2>tangle spinning tea light</h2>
-            <span class="price">&dollar;56.00 USD</span>
-          </a>
-        </li>
-      </ul>
-    </section>
-
-    <div class="pagination container">
-      <button type="button" disabled class="arrow-btn"><img src="../../static/images/left_arrow.svg" alt="arrow" width="13"
-          height="26"></button>
-      <ul class="pagination-list">
-        <li class="pagination-list-item"><a class="pagination-list-item-link" href="#">1</a></li>
-        <li class="pagination-list-item"><a class="pagination-list-item-link" href="#">2</a></li>
-        <li class="pagination-list-item"><a class="pagination-list-item-link" href="#">3</a></li>
-        <li class="pagination-list-item"><a class="pagination-list-item-link" href="#">4</a></li>
-      </ul>
-      <button type="button" class="arrow-btn"><img src="../../static/images/right_arrow.svg" alt="arrow" width="13"
-          height="26"></button>
-    </div>
-
+<body>
+  @@include('header/index.html', {
+  type:"toys",
+  })
+  <main>
+    @@include('breadcrumbs/index.html',{
+      type:"toys"
+      })
+    @@include('filter/index.html')
+    @@include('product-list/index.html')
+    @@include('pagination/index.html')
   </main>
+  @@include('footer/index.html')
+</body>
 
-    @@include('footer/index.html')
-  </body>
 </html>

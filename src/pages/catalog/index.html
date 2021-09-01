@@ -20,44 +20,56 @@
     type:"catalog",
   }
   )
-
   <main>
+    @@include('breadcrumbs/index.html',{
+      type:"catalog"
+    })
     <section class="catalog">
-      <div class="heading container">
-        <h1>category products</h1>
-        <ul class="breadcrumbs">
-          <li class="breadcrumbs-item"><a class="breadcrumbs-item-link" href="../../index.html">Home</a></li>
-          <li class="breadcrumbs-item">Catalog</li>
-        </ul>
-      </div>
-
       <ul class="category-list-1 container">
-        <li class="category-list-item product-img-1"><a class="category-list-item-link" href="#"><img
-              src="../../static/images/apparel_kids.png" alt="sweater" width="280" height="270">
-            <span class="category-list-item-link-text">apparel kids</span>
-          </a></li>
-        <li class="category-list-item product-img-2"><a class="category-list-item-link" href="#"><img
-              src="../../static/images/holiday_shop.png" alt="holiday-sock" width="280" height="270">
-            <span class="category-list-item-link-text">holiday shop</span>
-          </a></li>
-        <li class="category-list-item product-img-3"><a class="category-list-item-link" href="../toys/index.html"><img
-              src="../../static/images/toys.png" alt="deer" width="280" height="270">
-            <span class="category-list-item-link-text">toys</span>
-          </a></li>
+        @@include('carousel-item/index.html', {
+          backgroundClass:"product-img-1",
+          link:"#",
+          img:"../../static/images/apparel_kids.png",
+          alt:"sweater",
+          text:"apparel kids"
+        })
+        @@include('carousel-item/index.html', {
+          backgroundClass:"product-img-2",
+          link:"#",
+          img:"../../static/images/holiday_shop.png",
+          alt:"holiday-sock",
+          text:"holiday shop"
+        })
+        @@include('carousel-item/index.html', {
+          backgroundClass:"product-img-3",
+          link:"../toys/index.html",
+          img:"../../static/images/toys.png",
+          alt:"deer",
+          text:"toys"
+        })
       </ul>
       <ul class="category-list-2 container">
-        <li class="category-list-item product-img-4"><a class="category-list-item-link" href="#"><img
-              src="../../static/images/accessories.png" alt="skater" width="280" height="270">
-            <span class="category-list-item-link-text">accessories</span>
-          </a></li>
-        <li class="category-list-item product-img-5"><a class="category-list-item-link" href="#"><img
-              src="../../static/images/sale.png" alt="flamingo" width="280" height="270">
-            <span class="category-list-item-link-text">sale</span>
-          </a></li>
-        <li class="category-list-item product-img-6"><a class="category-list-item-link" href="#"><img
-              src="../../static/images/apparel_adults.png" alt="dress" width="280" height="270">
-            <span class="category-list-item-link-text">apparel adults</span>
-          </a></li>
+      @@include('carousel-item/index.html', {
+        backgroundClass:"product-img-4",
+        link:"#",
+        img:"../../static/images/accessories.png",
+        alt:"skater",
+        text:"accessories"
+      })
+      @@include('carousel-item/index.html', {
+        backgrounClass:"product-img-5",
+        link:"#",
+        img:"../../static/images/sale.png",
+        alt:"flamingo",
+        text:"sale"
+      })
+      @@include('carousel-item/index.html', {
+        backgroundClass:"product-img-6",
+        link:"#",
+        img:"../../static/images/apparel_adults.png",
+        alt:"dress",
+        text:"apparel adults"
+      })
       </ul>
     </section>
 

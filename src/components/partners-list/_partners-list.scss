@@ -1,0 +1,18 @@
+.mg-partners {
+  margin-top: 90px;
+}
+
+.partners-list {
+  display: flex;
+  align-items: center;
+}
+
+.partners-list-item {
+  margin-right: 127px;
+  transition: 0.5s;
+}
+
+.partners-list-item:hover,
+.partners-list-item:active {
+  opacity: 0.5;
+}

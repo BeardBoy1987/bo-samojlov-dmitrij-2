@@ -1,0 +1,129 @@
+.filtr {
+  display: flex;
+  min-height: auto;
+  margin-top: 32px;
+  margin-left: -27px;
+  background: rgba(125, 151, 218, 0.2);
+}
+
+.filtr-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 1180px;
+  margin-top: 42px;
+}
+
+.cost-range {
+  appearance: none;
+  width: 188px;
+  height: 6px;
+  margin: 25px 14px 16px 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.cost-range:hover,
+.cost-range:focus {
+  cursor: pointer;
+}
+
+.cost-range::-webkit-slider-thumb {
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  background-color: #ffffff;
+  border: 8px solid #c29974;
+  border-radius: 50%;
+}
+
+.range-value {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.checkbox-list {
+  margin-top: 0px;
+  margin-bottom: 40px;
+}
+
+.checkbox-list-item {
+  padding-top: 15px;
+}
+
+.checkbox-label {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1e0606;
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+}
+
+.shipping-radio-label {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1e0606;
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+}
+
+.shipping-heading {
+  margin-left: 70px;
+}
+
+.shipping-radio-list {
+  margin-left: 70px;
+}
+
+.shipping-radio-list-item {
+  padding-bottom: 10px;
+}
+
+.amount-radio-list {
+  display: flex;
+  width: 100%;
+}
+
+.amount-heading {
+  margin-left: 20px;
+}
+
+.amount-radio-label {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1e0606;
+  position: relative;
+  cursor: pointer;
+  padding: 28px 0px 0px 18px;
+  z-index: 0;
+  margin-left: 20px;
+}
+
+legend {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1e0606;
+}
+
+fieldset {
+  border: none;
+}
+
+fieldset > label {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1e0606;
+}

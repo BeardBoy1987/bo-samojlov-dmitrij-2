@@ -1,3 +1,107 @@
+// CONTACT US FORM
+
+fieldset {
+  border: none;
+}
+
+.contact-us-form {
+  display: flex;
+  width: 680px;
+  height: max-content;
+  background: #e5eaf8;
+  padding-top: 16px;
+  padding-left: 10px;
+  padding-bottom: 25px;
+}
+
+.contact-us-form label {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #1e0606;
+  padding-bottom: 3px;
+}
+
+.checkbox-label {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+}
+
+.contact-us-form input {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.name-input {
+  width: 600px;
+  height: 50px;
+  margin: 0px auto;
+  padding: 20px 11px 14px;
+}
+
+.name-input::placeholder {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  color: #1e0606;
+}
+
+.contact-us-contact-info {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.contact-us-contact-input {
+  width: 280px;
+  height: 50px;
+  padding: 20px 11px 14px;
+}
+
+.contact-us-input-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-us-form input:hover,
+input:focus {
+  padding: 19px 10px 13px;
+  background: #ffffff;
+  border: 2px solid #c29974;
+}
+
+.contact-us-form input:disabled {
+  padding: 19px 10px 13px;
+  background: #ffffff;
+  border: 2px solid #ebebeb;
+}
+
+textarea {
+  margin: 0 auto;
+  width: 600px;
+  height: 150px;
+  resize: none;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 20px 11px 14px;
+}
+
+textarea:hover,
+textarea:focus {
+  background: #ffffff;
+  border: 2px solid #c29974;
+}
+
+textarea:disabled {
+  background: #ffffff;
+  border: 2px solid #ebebeb;
+}
+
+// POPUP WINDOW
+
 fieldset {
   border: none;
 }

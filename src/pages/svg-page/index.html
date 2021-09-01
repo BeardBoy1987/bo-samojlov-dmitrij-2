@@ -6,28 +6,24 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@300;700&family=Open+Sans:wght@400;700&family=Roboto&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
-  <link href="../../common.css" rel="stylesheet" />
+  <link href="/common.css" rel="stylesheet" />
   <link href="style.css" rel="stylesheet" />
-  <link rel="shortcut icon" href="/static/images/favicon.ico">
-  <title>Blog</title>
+  <link rel="shortcut icon" href="/static/images/favicon.ico" />
+  <title>SVG</title>
 </head>
 
 <body>
   @@include('header/index.html', {
-  type:"blog",
-  }
-  )
-  <main>
-    @@include('breadcrumbs/index.html',{
-    type:"blog"
+    type:"svg-page",
+  })
+<main>
+  @@include('breadcrumbs/index.html',{
+    type:"svg"
     })
-    @@include('blog/index.html')
-    @@include('pagination/index.html')
-  </main>
+</main>
   @@include('footer/index.html')
 </body>
-
 </html>
