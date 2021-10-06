@@ -1,38 +1,42 @@
-.news-list-item {
-  width: 33%;
-}
+@import "./mixin";
 
-.news-img {
-  background: url(../../static/images/logo.svg) center #dae0e6 no-repeat;
-}
-
-.news-date {
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 22px;
-  color: #818181;
-}
-
-.blog-heading {
-  font-family: "Montserrat", "Verdana", sans-serif;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 31px;
-  color: #1e0606;
-  margin-top: -7px;
-}
-
-a:hover > h2,
-a:focus > h2 {
-  text-decoration: underline;
-}
-
-.news-content {
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 25px;
-  color: #1e0606;
-  width: 99%;
+.news {
+  &__list-item {
+    width: 33%;
+  }
+  
+  &__img {
+    background: url(../../static/images/logo.svg) center #dae0e6 no-repeat;
+  }
+  
+  &__date {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #818181;
+  }
+  
+  &__heading {
+    font-family: "Montserrat", "Verdana", sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 31px;
+    color: #1e0606;
+    margin-top: -7px;
+  }
+  
+  &__link:hover > h2,
+  &__link:focus > h2 {
+    text-decoration: underline;
+  }
+  
+  &__content {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: #1e0606;
+    width: 99%;
+  }
 }

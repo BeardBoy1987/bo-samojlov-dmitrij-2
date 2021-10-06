@@ -1,0 +1,36 @@
+@import "./mixin";
+
+.svg {
+	cursor: pointer;
+	margin: 20px 0 60px 0;
+
+	&:hover {
+		.svg__line--1 {
+			stroke: #ccd1d9;
+		}
+
+		.svg__line--2 {
+			stroke: #ffce54;
+		}
+
+		.svg__line--4 {
+			stroke: #5d9cec;
+		}
+
+		.svg__line--5 {
+			stroke: #a0d468;
+		}
+		.svg__line--10 {
+			stroke: #5d9cec;
+		}
+		.svg__line--11 {
+			stroke: #ffce54;
+		}
+		.svg__line--12 {
+			stroke: #ed5565;
+		}
+		.svg__line--13 {
+			stroke: #a0d468;
+		}
+  }
+}

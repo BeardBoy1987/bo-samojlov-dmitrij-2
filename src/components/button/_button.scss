@@ -1,3 +1,5 @@
+@import "./mixin";
+
 .button {
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: bold;
@@ -24,24 +26,31 @@
   background-color: #c7c1c1;
 }
 
-}
-
-.explore-btn {
+&--explore {
   margin-left: 40px;
   margin-top: 20px;
+
+  @include tablet {
+    margin-left: 15px;
+  }
 }
 
-.learn-btn {
+&--learn {
   width: 149px;
   margin-top: 10px;
+
+  @include tablet {
+    margin-left: -56px;
+  }
 }
 
-.submit-btn {
+&--submit {
   margin-top: 1px;
   margin-left: 15px;
 }
 
-.apply-btn {
+&--apply {
   position: relative;
   top: 35px;
+}
 }

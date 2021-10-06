@@ -1,111 +1,139 @@
-.mg-main-theme-container {
+@import "./mixin";
+
+.main-theme {
+  position: relative;
+  background: #eee4db;
+  min-height: 411px;
   margin-top: 130px;
+
+  @include tablet {
+    min-width: 648px;
+    margin-top: 35px;
+  }
+
+  &__shipping-info {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: #c29974;
+    position: absolute;
+    padding: 11px;
+    bottom: 0px;
+    margin: 0 auto;
+    width: 100%;
+    height: max-content;
+  }
 }
 
 .slide-pagination {
   margin-top: 20px;
   margin-left: 36px;
+
+  @include tablet {
+    margin-left: 0px;
+  }
+
+  &__counter {
+    font-family: "Montserrat", "Verdana", sans-serif;
+    font-size: 60px;
+    line-height: 73px;
+    color: rgba(30, 6, 6, 0.05);
+  }
+  
+  &__list {
+    margin-top: -5px;
+  }
+
+  &__item:first-child &__button {
+    background-color: rgba(30, 6, 6, 0.6);
+  }
+  
+  &__button {
+    width: 31px;
+    height: 3px;
+    border: none;
+    outline: none;
+    background-color: #d6cac2;
+    transition: 0.5s;
+  }
+  
+  &__button:hover,
+  &__button:focus {
+    background-color: rgba(30, 6, 6, 0.6);
+    cursor: pointer;
+  }
 }
 
-.main-theme {
-  background: #eee4db;
-  min-height: 411px;
-  position: relative;
-}
+.slide {
+  &__info {
+    display: flex;
+    flex-direction: column;
+    max-width: 70%;
+    min-width: 311px;
+  }
 
-.slide-counter {
-  font-family: "Montserrat", "Verdana", sans-serif;
-  font-size: 60px;
-  line-height: 73px;
-  color: rgba(30, 6, 6, 0.05);
-}
+  &__heading {
+    font-family: "Montserrat", "Verdana", sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 44px;
+    text-transform: uppercase;
+    color: #1e0606;
+    margin-top: 90px;
+    margin-left: 37px;
+    margin-bottom: 20px;
+    max-width: 70%;
 
-.main-theme-menu-item:first-child .main-theme-menu-button {
-  background-color: rgba(30, 6, 6, 0.6);
-}
+    @include tablet {
+      margin-left: 15px;
+      max-width: 75%;
+    }
+  }
 
-.main-theme-menu-button-head:hover {
-  cursor: pointer;
-}
+  &__design {
+    font-family: "Crimson Text", "Palatino", serif;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 25px;
+    color: #1e0606;
+    margin-left: 40px;
+    max-width: 100%;
 
-.main-theme-menu-button {
-  width: 31px;
-  height: 3px;
-  border: none;
-  outline: none;
-  background-color: #d6cac2;
-  transition: 0.5s;
-}
+    @include tablet {
+      margin-left: 15px;
+    }
+  }
 
-.main-theme-menu-button:hover,
-.main-theme-menu-button:focus {
-  background-color: rgba(30, 6, 6, 0.6);
-  cursor: pointer;
-}
+  &__img-wrapper {
+    position: relative;
+    align-self: flex-end;
+    right: -350px;
+    width: 100%;
+    max-width: 636px;
+    margin-top: -130px;
+    min-width: 326px;
+    height: 243px;
 
-.slide-info {
-  display: flex;
-  flex-direction: column;
-  max-width: 70%;
-  min-width: 311px;
-}
+    @include tablet {
+      right: -199px;
+    }
+  }
+  
+  &__img {
+    position: absolute;
+    width: 100%;
+    width: 636px;
+    height: 489px;
+    bottom: 0;
 
-.slide-heading {
-  font-family: "Montserrat", "Verdana", sans-serif;
-  font-weight: bold;
-  font-size: 40px;
-  line-height: 44px;
-  text-transform: uppercase;
-  color: #1e0606;
-  margin-top: 90px;
-  margin-left: 37px;
-  margin-bottom: 20px;
-  max-width: 70%;
-}
-
-.design {
-  font-family: "Crimson Text", "Palatino", serif;
-  font-style: italic;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 25px;
-  color: #1e0606;
-  margin-left: 40px;
-  max-width: 100%;
-}
-
-.slide-img-wrapper {
-  position: relative;
-  align-self: flex-end;
-  right: -350px;
-  width: 100%;
-  max-width: 636px;
-  margin-top: -130px;
-  min-width: 326px;
-  height: 243px;
-}
-
-.slide-img {
-  position: absolute;
-  width: 100%;
-  width: 636px;
-  height: 489px;
-  bottom: 0;
-}
-
-.shipping-info {
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 16px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #ffffff;
-  background: #c29974;
-  position: absolute;
-  padding: 11px;
-  bottom: 0px;
-  margin: 0 auto;
-  width: 100%;
-  height: max-content;
+    @include tablet {
+      width: 385px;
+      height: 286px;
+    }
+  }
 }

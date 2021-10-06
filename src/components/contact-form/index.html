@@ -1,42 +1,53 @@
 @@if (type === "popup") {
 <div class="popup-wrapper">
   <form class="contact-form" name="form" action="#" method="post">
-    <fieldset class="main-form">
-      <fieldset class="input-wrap">
-        <label for="name">Name</label>
-        <input placeholder="ivan ivanov" class="input name-input" name="name" type="text" id="name" />
+    <fieldset>
+
+      <fieldset class="contact-form__input-wrap">
+        <label class="contact-form__label" for="name">Name</label>
+        <input class="contact-form__input contact-form__input--name-input" placeholder="ivan ivanov" name="name" type="text" id="name" />
       </fieldset>
-      <div class="contact-info">
-        <fieldset class="input-wrap">
-          <label for="phone">Phone</label>
-          <input class="input contact-input" name="phone" type="text" id="phone" />
+
+      <div class="contact-form__info">
+
+        <fieldset class="contact-form__input-wrap">
+          <label class="contact-form__label" for="phone">Phone</label>
+          <input class="contact-form__input contact-form__input--contact-input" name="phone" type="text" id="phone" />
         </fieldset>
-        <fieldset class="input-wrap">
-          <label for="contact-email">Email</label>
-          <input class="input contact-input" name="email" type="text" id="contact-email" />
+
+        <fieldset class="contact-form__input-wrap">
+          <label class="contact-form__label" for="contact-email">Email</label>
+          <input class="contact-form__input contact-form__input--contact-input" name="email" type="text" id="contact-email" />
         </fieldset>
+
       </div>
-      <fieldset class="input-wrap">
-        <label for="message">Message</label>
-        <textarea name="message" id="message"></textarea>
+
+      <fieldset class="contact-form__input-wrap">
+        <label class="contact-form__label" for="message">Message</label>
+        <textarea class="contact-form__textarea" name="message" id="message"></textarea>
       </fieldset>
-      <fieldset class="input-wrap">
-        <input class="checkbox" checked type="checkbox" name="info" id="agree" value="">
-        <label class="checkbox-label" for="agree">By clicking on the button, you
-          consent to the
-          processing
-          of your personal data</label>
+
+      <fieldset class="contact-form__input-wrap">
+        @@include('checkbox/index.html', {
+          name:"info",
+          value:"",
+          id:"agree",
+          for:"agree",
+          text:"By clicking on the button, you consent to the processing of your personal data",
+        })
       </fieldset>
+
       <fieldset>
         @@include('button/index.html', {
           text:"submit",
-          class:"submit-btn",
+          class:"button--submit",
           type:"button",
           disabled:"yes",
         })
       </fieldset>
+
     </fieldset>
-    <a class="close-btn" aria-label="close-button"><img src="../../static/images/close.png" width="25" height="25" alt="close"></a>
+    <a class="contact-form__close-btn" aria-label="close-button"><img src="../../static/images/close.png" width="15" height="15" alt="close"></a>
   </form>
 </div>
 }
@@ -45,35 +56,37 @@
   <div class="container">
     <form class="contact-us-form" name="form" action="#" method="post">
 
-      <fieldset class="contact-us-main-form">
-        <fieldset class="contact-us-input-wrap">
-          <label for="contact-us-name">Name</label>
-          <input placeholder="ivan ivanov" class="input name-input" name="name" type="text" id="contact-us-name" />
+      <fieldset>
+        <fieldset class="contact-us-form__input-wrap">
+          <label for="contact-us-form__label">Name</label>
+          <input class="contact-us-form__input contact-us-form__input--name-input" placeholder="ivan ivanov" name="name" type="text" id="contact-us-name" />
         </fieldset>
 
-        <div class="contact-us-contact-info">
-          <fieldset class="contact-us-input-wrap">
-            <label for="contact-us-phone">Phone</label>
-            <input class="input contact-input" name="phone" type="text" id="contact-us-phone" />
+        <div class="contact-us-form__contact-info">
+          <fieldset class="contact-us-form__input-wrap">
+            <label for="contact-us-form__label">Phone</label>
+            <input class="contact-us-form__input contact-us-form__input--contact-input" name="phone" type="text" id="contact-us-phone" />
           </fieldset>
 
-          <fieldset class="contact-us-input-wrap">
-            <label for="contact-us-email">Email</label>
-            <input class="input contact-input" name="email" type="text" id="contact-us-email" />
+          <fieldset class="contact-us-form__input-wrap">
+            <label for="contact-us-form__label">Email</label>
+            <input class="contact-us-form__input contact-us-form__input--contact-input" name="email" type="text" id="contact-us-email" />
           </fieldset>
         </div>
 
-        <fieldset class="contact-us-input-wrap">
+        <fieldset class="contact-us-form__input-wrap">
           <label for="contact-us-message">Message</label>
           <textarea name="message" id="contact-us-message"></textarea>
         </fieldset>
 
         <fieldset>
-          <input class="checkbox" checked type="checkbox" name="info" id="contact-us-agree" value="">
-          <label class="checkbox-label" for="contact-us-agree">By clicking on the button, you
-            consent to the
-            processing
-            of your personal data</label>
+          @@include('checkbox/index.html', {
+          name:"info",
+          value:"",
+          id:"contact-us-agree",
+          for:"contact-us-agree",
+          text:"By clicking on the button, you consent to the processing of your personal data",
+        })
         </fieldset>
 
         <fieldset>

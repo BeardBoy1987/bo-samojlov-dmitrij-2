@@ -1,64 +1,66 @@
+@import "./mixin";
+
 .breadcrumbs {
   flex-direction: column;
   margin-top: 36px;
-}
 
-h1 {
-  font-family: "Montserrat", "Verdana", sans-serif;
-  font-weight: bold;
-  font-size: 40px;
-  line-height: 49px;
-  text-transform: uppercase;
-  color: #1e0606;
-  margin-bottom: 15px;
-}
-
-.breadcrumbs-list {
-  display: flex;
-  margin-top: 0px;
-}
-
-.breadcrumbs-item {
-  position: relative;
-  padding-right: 48px;
-}
-
-.breadcrumbs-item:first-child::after,
-.breadcrumbs-item:nth-child(2):after {
-  position: absolute;
-  content: url(../../static/images/breadcrumb.svg);
-  right: 18px;
-  bottom: 4px;
-}
-
-.breadcrumbs-item-link {
-  font-family: "Crimson Text", "Palatino", serif;
-  font-style: italic;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 25px;
-  color: #1e0606;
-  transition: 0.5s;
-}
-
-.breadcrumbs-item-link:hover,
-.breadcrumbs-item-link:focus {
-  opacity: 0.5;
-}
-
-.breadcrumbs-item-link:active {
-  opacity: 0.3;
-}
-
-.breadcrumbs-item:last-child {
-  font-family: "Crimson Text", "Palatino", serif;
-  font-style: italic;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 25px;
-  opacity: 0.5;
-}
-
-.breadcrumbs-item:last-child::after {
-  content: '';
+  &__heading {
+    font-family: "Montserrat", "Verdana", sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 49px;
+    text-transform: uppercase;
+    color: #1e0606;
+    margin-bottom: 15px;
+  }
+  
+  &__list {
+    display: flex;
+    margin-top: 0px;
+  }
+  
+  &__list-item {
+    position: relative;
+    padding-right: 48px;
+  }
+  
+  &__list-item:first-child::after,
+  &__list-item:nth-child(2):after {
+    position: absolute;
+    content: url(../../static/images/breadcrumb.svg);
+    right: 18px;
+    bottom: 4px;
+  }
+  
+  &__list-item:last-child {
+    font-family: "Crimson Text", "Palatino", serif;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 25px;
+    opacity: 0.5;
+  }
+  
+  &__list-item:last-child::after {
+    content: '';
+  }
+  
+  &__item-link {
+    font-family: "Crimson Text", "Palatino", serif;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 25px;
+    color: #1e0606;
+    transition: 0.5s;
+  }
+  
+  &__item-link:hover,
+  &__item-link:focus {
+    opacity: 0.5;
+  }
+  
+  &__item-link:active {
+    opacity: 0.3;
+  }
 }

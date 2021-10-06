@@ -1,9 +1,11 @@
+@import "./mixin";
+
 .news {
   margin-top: 50px;
-}
 
-.news-list {
-  display: flex;
-  flex-flow: row wrap;
-  width: 100%;
+  &__list {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+  }
 }

@@ -1,3 +1,5 @@
+@import "./mixin";
+
 // POPUP WINDOW
 
 .popup-wrapper {
@@ -8,10 +10,10 @@
   height: 100%;
   top: 0;
   left: 0;
-}
 
-.popup-wrapper-open {
-  display: block;
+  &--open {
+    display: block;
+  }
 }
 
 .contact-form {
@@ -25,108 +27,111 @@
   background: #e5eaf8;
   padding-top: 20px;
   padding-bottom: 25px;
-}
 
-.contact-form label {
-  font-family: "Roboto", "Arial", sans-serif;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 19px;
-  color: #1e0606;
-  padding-bottom: 3px;
-}
+  @include tablet {
+    left: 43%;
+  }
 
-.checkbox-label {
-  position: relative;
-  padding-left: 30px;
-  cursor: pointer;
-}
+  &__input-wrap {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+  }
 
-.contact-form input {
-  background: #ffffff;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-}
+  &__label {
+    font-family: "Roboto", "Arial", sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #1e0606;
+    padding-bottom: 3px;
+  }
 
-.name-input {
-  width: 600px;
-  height: 50px;
-  margin: 0px auto;
-  padding: 20px 11px 14px;
-}
+  &__input {
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+  }
 
-.name-input::placeholder {
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 25px;
-  color: #1e0606;
-}
+  &__input:hover,
+  input:focus {
+    background: #ffffff;
+    padding: 19px 10px 13px;
+    border: 2px solid #c29974;
+  }
+  
+  &__input:disabled {
+    background: #ffffff;
+    border: 2px solid #ebebeb;
+  }
 
-.contact-info {
-  display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
-}
+  &__input--name-input {
+    width: 610px;
+    height: 50px;
+    margin: 0px auto;
+    padding: 20px 11px 14px;
+  }
+  
+  &__input--name-input::placeholder {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: #1e0606;
+  }
 
-.contact-input {
-  width: 280px;
-  height: 50px;
-  padding: 20px 11px 14px;
-}
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
 
-.input-wrap {
-  display: flex;
-  flex-direction: column;
-  margin-left: 15px;
-}
+  &__input--contact-input {
+    width: 280px;
+    height: 50px;
+    padding: 20px 11px 14px;
+  }
 
-.contact-form input:hover,
-input:focus {
-  background: #ffffff;
-  padding: 19px 10px 13px;
-  border: 2px solid #c29974;
-}
+  &__textarea {
+    margin: 0 auto;
+    width: 610px;
+    height: 150px;
+    resize: none;
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 20px 11px 14px;
+  }
+  
+  &__textarea:hover,
+  &__textarea:focus {
+    background: #ffffff;
+    padding: 19px 10px 13px;
+    border: 2px solid #c29974;
+  }
+  
+  &__textarea:disabled {
+    background: #ffffff;
+    border: 2px solid #ebebeb;
+  }
 
-.contact-form input:disabled {
-  background: #ffffff;
-  border: 2px solid #ebebeb;
-}
+  &__close-btn {
+    position: fixed;
+    top: 0%;
+    left: 101%;
+    border: none;
+    outline: none;
+    background: transparent;
 
-textarea {
-  margin: 0 auto;
-  width: 600px;
-  height: 150px;
-  resize: none;
-  background: #ffffff;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  padding: 20px 11px 14px;
-}
-
-textarea:hover,
-textarea:focus {
-  background: #ffffff;
-  padding: 19px 10px 13px;
-  border: 2px solid #c29974;
-}
-
-textarea:disabled {
-  background: #ffffff;
-  border: 2px solid #ebebeb;
-}
-
-.close-btn {
-  position: fixed;
-  top: 0%;
-  left: 101%;
-  border: none;
-  outline: none;
-  background: transparent;
-}
-
-.close-btn:hover,
-.close-btn:focus {
-  opacity: 0.5;
-  cursor: pointer;
+    @include tablet {
+      top: -4%;
+      left: 98%;
+    }
+  }
+  
+  &__close-btn:hover,
+  &__close-btn:focus {
+    opacity: 0.5;
+    cursor: pointer;
+  }
 }
 
 // CONTACT US FORM
@@ -139,69 +144,63 @@ textarea:disabled {
   padding-top: 16px;
   padding-left: 10px;
   padding-bottom: 25px;
-}
 
-.contact-us-form label {
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 19px;
-  color: #1e0606;
-  padding-bottom: 3px;
-}
+  &__input-wrap {
+    display: flex;
+    flex-direction: column;
+  }
 
-.checkbox-label {
-  position: relative;
-  padding-left: 30px;
-  cursor: pointer;
-}
+  &__label {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #1e0606;
+    padding-bottom: 3px;
+  }
 
-.contact-us-form input {
-  background: #ffffff;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-}
+  &__input {
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+  }
 
-.name-input {
-  width: 600px;
-  height: 50px;
-  margin: 0px auto;
-  padding: 20px 11px 14px;
-}
-
-.name-input::placeholder {
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 25px;
-  color: #1e0606;
-}
-
-.contact-us-contact-info {
-  display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
-}
-
-.contact-us-contact-input {
-  width: 280px;
-  height: 50px;
-  padding: 20px 11px 14px;
-}
-
-.contact-us-input-wrap {
-  display: flex;
-  flex-direction: column;
-}
-
-.contact-us-form input:hover,
-input:focus {
+  &__input:hover,
+  input:focus {
   padding: 19px 10px 13px;
   background: #ffffff;
   border: 2px solid #c29974;
 }
 
-.contact-us-form input:disabled {
+&__input:disabled {
   padding: 19px 10px 13px;
   background: #ffffff;
   border: 2px solid #ebebeb;
+}
+
+  &__input--name-input {
+    width: 600px;
+    height: 50px;
+    margin: 0px auto;
+    padding: 20px 11px 14px;
+  }
+
+  &__input--name-input::placeholder {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: #1e0606;
+  }
+
+  &__contact-info {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  &__input--contact-input {
+    width: 280px;
+    height: 50px;
+    padding: 20px 11px 14px;
+  }
 }

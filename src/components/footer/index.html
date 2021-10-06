@@ -1,54 +1,54 @@
-<footer>
-  <div class="container footer-container">
+<footer class="footer">
+  <div class="footer__wrapper container">
     <section class="footer-nav">
-      <h3>Navigation</h3>
-      <ul class="footer-navigation">
-        <li class="footer-navigation-item"><a href="#">About Us</a></li>
-        <li class="footer-navigation-item"><a href="./pages/blog/index.html">Blog</a></li>
-        <li class="footer-navigation-item"><a href="#">Design Services</a></li>
-        <li class="footer-navigation-item"><a href="#">Featured On</a></li>
-        <li class="footer-navigation-item"><a href="#">2018 Holiday Catalog</a></li>
-        <li class="footer-navigation-item"><a href="#">Shop By Designer</a></li>
+      <h3 class="footer-nav__heading">Navigation</h3>
+      <ul class="footer-nav__list">
+        <li class="footer-nav__item"><a class="footer-nav__link" href="#">About Us</a></li>
+        <li class="footer-nav__item"><a class="footer-nav__link" href="./pages/blog/index.html">Blog</a></li>
+        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Design Services</a></li>
+        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Featured On</a></li>
+        <li class="footer-nav__item"><a class="footer-nav__link" href="#">2018 Holiday Catalog</a></li>
+        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Shop By Designer</a></li>
       </ul>
     </section>
     <section class="customer-info">
-      <h3>Customer information</h3>
-      <ul class="footer-additional-list">
-        <li class="footer-additional-list-item"><a href="./pages/contacts/index.html">Contact Us</a></li>
-        <li class="footer-additional-list-item"><a href="#">Sale Exclusions</a></li>
-        <li class="footer-additional-list-item"><a href="#">Shipping & Returns</a></li>
-        <li class="footer-additional-list-item"><a href="#">Terms & Conditions</a></li>
-        <li class="footer-additional-list-item"><a href="#">Privacy Policy</a></li>
-        <li class="footer-additional-list-item"><a href="#">Search</a></li>
+      <h3 class="customer-info__heading">Customer information</h3>
+      <ul class="customer-info__list">
+        <li class="customer-info__item"><a class="customer-info__link" href="./pages/contacts/index.html">Contact Us</a></li>
+        <li class="customer-info__item"><a class="customer-info__link" href="#">Sale Exclusions</a></li>
+        <li class="customer-info__item"><a class="customer-info__link" href="#">Shipping & Returns</a></li>
+        <li class="customer-info__item"><a class="customer-info__link" href="#">Terms & Conditions</a></li>
+        <li class="customer-info__item"><a class="customer-info__link" href="#">Privacy Policy</a></li>
+        <li class="customer-info__item"><a class="customer-info__link" href="#">Search</a></li>
       </ul>
     </section>
 
     <section class="connect">
-      <h3>Connect</h3>
-      <form class="email-submit" action="#">
+      <h3 class="connect__heading">Connect</h3>
+      <form class="connect__email-form" action="#">
         <label for="email"></label>
-        <input type="text" id="email" placeholder="Email">
+        <input class="connect__input" type="text" id="email" placeholder="Email">
         @@include('button/index.html', {
           text:"join",
           type:"button",
           disabled:"no",
         })
       </form>
-      <ul class="footer-social-list">
-        <li class="footer-social-list-item"><a href="https://facebook.com/" target="_blank"><img src="/static/images/facebook.svg"
+      <ul class="connect__social-list">
+        <li class="connect__item"><a href="https://facebook.com/" target="_blank"><img src="/static/images/facebook.svg"
               alt="facebook" width="30" height="30"></a></li>
-        <li class="footer-social-list-item"><a href="https://twitter.com/" target="_blank"><img src="/static/images/twitter.svg"
+        <li class="connect__item"><a href="https://twitter.com/" target="_blank"><img src="/static/images/twitter.svg"
               alt="twitter" width="30" height="30"></a></li>
-        <li class="footer-social-list-item"><a href="https://www.pinterest.ru/" target="_blank"><img
+        <li class="connect__item"><a href="https://www.pinterest.ru/" target="_blank"><img
               src="/static/images/pinterest.svg" alt="pinterest" width="30" height="30"></a></li>
-        <li class="footer-social-list-item"><a href="https://www.instagram.com/" target="_blank"><img
+        <li class="connect__item"><a href="https://www.instagram.com/" target="_blank"><img
               src="/static/images/instagram.svg" alt="instagram" width="30" height="30"></a></li>
       </ul>
     </section>
 
     <div class="additional-info">
       <div class="company-rating">
-        <div class="rating-area">
+        <div class="company-rating__area">
           <input type="radio" id="star-5" name="rating" value="5">
           <label for="star-5" title="rating «5»"></label>
           <input type="radio" id="star-4" name="rating" value="4">
@@ -60,10 +60,10 @@
           <input type="radio" id="star-1" name="rating" value="1">
           <label for="star-1" title="rating «1»"></label>
         </div>
-        <span class="rate">Company Rating</span>
+        <span class="company-rating__title">Company Rating</span>
       </div>
-      <span class="copyright">Copyright © 2018 Dlk • Design Life Kids</span>
-      <a class="dl-link" href="https://directline.digital/" target="_blank">Web Design — Direct Line Development</a>
+      <span class="additional-info__copyright">Copyright © 2018 Dlk • Design Life Kids</span>
+      <a class="additional-info__link" href="https://directline.digital/" target="_blank">Web Design — Direct Line Development</a>
     </div>
   </div>
 </footer>

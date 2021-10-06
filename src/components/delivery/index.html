@@ -1,22 +1,29 @@
-<section class="delivery container mg-delivery">
-  <img class="delivery-img" src="/static/images/woman.jpg" alt="woman" width="480" height="559">
+<section class="delivery container">
+  <picture>
+    <source srcset="/static/images/woman.jpg, /static/images/woman_2x.jpg 2x" media="(min-width: 1024px)">
+    <source srcset="/static/images/woman_tablet.jpg, /static/images/woman_tablet_2x.jpg 2x"
+      media="(min-width: 768px) and (max-width: 1023px)">
+    <source srcset="/static/images/woman_mobile.jpg, /static/images/woman_mobile_2x.jpg 2x"
+      media="(max-width: 767px)">
+    <img class="delivery__img" src="/static/images/woman.jpg" alt="woman">
+    </picture>
   <div class="delivery-info">
-    <h2 class="delivery-heading">delivery</h2>
-    <ul class="delivery-list">
-      <li class="delivery-list-item"><a class="delivery-list-item-link-active" href="#">Delivery</a></li>
-      <li class="delivery-list-item"><a class="delivery-list-item-link" href="#">Guarantee</a></li>
-      <li class="delivery-list-item"><a class="delivery-list-item-link" href="#">Credit</a></li>
+    <h2 class="delivery-info__heading">delivery</h2>
+    <ul class="delivery-info__list">
+      <li class="delivery-info__list-item"><a class="delivery-info__item-link delivery-info__item-link_active" href="#">Delivery</a></li>
+      <li class="delivery-info__list-item"><a class="delivery-info__item-link" href="#">Guarantee</a></li>
+      <li class="delivery-info__list-item"><a class="delivery-info__item-link" href="#">Credit</a></li>
     </ul>
-    <p class="delivery-description">Some days i feel like i've been working on dlk my entire life and there are
+    <p class="delivery-info__description">Some days i feel like i've been working on dlk my entire life and there are
       other
       days that i am completely
       shocked that four years have flown by. It's simply magical.</p>
-    <p class="delivery-description">What started as an outlet to deal with the traumatic loss of my husband, dlk has
+    <p class="delivery-info__description">What started as an outlet to deal with the traumatic loss of my husband, dlk has
       now become a truly happy
       place for me and i have you and all of the beautiful designers that we work with to thank!</p>
     @@include('button/index.html', {
     text:"learn more",
-    class:"learn-btn",
+    class:"button--learn",
     type:"button",
     disabled:"no",
     })

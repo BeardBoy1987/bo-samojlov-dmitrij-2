@@ -1,18 +1,25 @@
-.mg-partners {
+@import "./mixin";
+
+.partners {
   margin-top: 90px;
-}
 
-.partners-list {
-  display: flex;
-  align-items: center;
-}
+  @include tablet {
+    margin-top: 60px;
+  }
 
-.partners-list-item {
-  margin-right: 127px;
-  transition: 0.5s;
-}
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  &__list-item {
+    transition: 0.5s;
+  }
 
-.partners-list-item:hover,
-.partners-list-item:active {
-  opacity: 0.5;
+  &__list-item:hover,
+  &__list-item:active {
+    opacity: 0.5;
+  }
 }
