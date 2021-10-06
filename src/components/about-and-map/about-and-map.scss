@@ -121,10 +121,12 @@
 
   &__map {
     background: #ededee;
+    width: 100%;
+    height: 194px;
 
     @include tablet {
-      width: 284px;
-      height: 151px;
+      width: 100%;
+      height: 50%;
     }
   }
 }
