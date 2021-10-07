@@ -30,9 +30,13 @@
   
   &__link:hover,
   &__link:focus {
-    color: #c29974;
+    color: #AAAAAA;
   }
   
+  &__left-btn {
+    transform: rotate(180deg);
+  }
+
   &__left-btn,
   &__right-btn {
     border: none;
@@ -42,16 +46,18 @@
     transition: 0.5s;
   }
   
-  &__left-btn:hover,
-  &__left-btn:focus,
-  &__right-btn:hover,
-  &__right-btn:focus {
+  &__left-btn:hover &__img path,
+  &__left-btn:focus &__img path ,
+  &__right-btn:hover &__img path,
+  &__right-btn:focus &__img path {
+    stroke: #C29974;
     opacity: 1;
     cursor: pointer;
   }
   
-  &__left-btn:active,
-  &__right-btn:active {
+  &__left-btn:active &__img path,
+  &__right-btn:active &__img path {
+    stroke: rgba(194, 153, 116, 0.7);
     opacity: 0.8;
   }
   

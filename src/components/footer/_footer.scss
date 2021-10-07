@@ -2,6 +2,11 @@
 
 .footer {
   background-color: #434343;
+  min-width: 100%;
+
+  @include tablet {
+    max-width: 1024px;
+  }
 
   &__wrapper {
     flex-flow: row wrap;
@@ -16,7 +21,7 @@
 
   @include tablet {
     margin-top: 80px;
-    width: 203px;
+    width: 280px;
   }
 
   &__heading {
@@ -63,7 +68,7 @@
 
   @include tablet {
     margin-top: 80px;
-    width: 203px;
+    width: 280px;
   }
 
   &__heading {
@@ -109,7 +114,7 @@
 
   @include tablet {
     margin-top: 80px;
-    width: 203px;
+    width: 280px;
   }
 
   &__heading {
@@ -181,7 +186,6 @@
   border-top: 1px solid #666666;
 
   @include tablet {
-    flex-wrap: wrap;
     flex-direction: column;
   }
 
@@ -195,8 +199,7 @@
     margin-left: 167px;
 
     @include tablet {
-      margin-top: 0px;
-      margin-left: -358px;
+      margin: 0 auto 0 0;
     }
   }
 
@@ -210,8 +213,8 @@
     margin-left: 115px;
 
     @include tablet {
+      margin-left: auto;
       margin-top: -20px;
-      margin-left: 348px;
     }
   }
   

@@ -22,6 +22,10 @@
     @include tablet {
       width: 62px;
     }
+
+    @include phones {
+      width: 42px;
+    }
   }
 }
 
@@ -29,6 +33,10 @@
   margin-left: 40px;
 
   @include tablet {
+    display: none;
+  }
+
+  @include phones {
     display: none;
   }
 
@@ -99,6 +107,10 @@
     transition: 0.5s;
 
     @include tablet {
+      display: none;
+    }
+
+    @include phones {
       display: none;
     }
   }
