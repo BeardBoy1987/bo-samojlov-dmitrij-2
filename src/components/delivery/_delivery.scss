@@ -1,16 +1,26 @@
 @import "./mixin";
 
 .delivery {
+  display: flex;
   margin-top: 90px;
+  width: 100%;
 
   @include tablet {
     margin-top: 60px;
+  }
+
+  @include phones {
+    flex-direction: column;
   }
 
   &__img {
     display: block;
     background: #b9d9e6;
     margin: -13px 0px;
+
+    @include phones {
+      margin: 0 auto;
+    }
   }
 }
 
@@ -21,6 +31,11 @@
 
   @include tablet {
     margin-top: -30px;
+  }
+
+  @include phones {
+    margin-top: 10px;
+    margin-left: auto;
   }
 
   &__heading {
@@ -34,7 +49,11 @@
     margin-top: 17px;
 
     @include tablet {
-      margin-left: -56px;
+      font-size: 36px;
+    }
+
+    @include phones {
+      font-size: 24px;
     }
   }
   
@@ -51,7 +70,6 @@
     padding-top: 10px;
 
     @include tablet {
-      margin-left: -56px;
     }
   }
   
@@ -74,10 +92,11 @@
     transition: 0.5s;
 
     @include tablet {
+      font-size: 34px;
+    }
+
+    @include phones {
       font-size: 24px;
-      padding: 11px 0 11px 30px;
-      min-width: 280px;
-      right: 25px;
     }
   }
   
@@ -99,12 +118,6 @@
     bottom: -40px;
     right: 50px;
     transition: 0.5s;
-
-    @include tablet {
-      padding: 11px 0 11px 30px;
-      min-width: 280px;
-      right: 25px;
-    }
   }
   
   &__item-link_active:hover,
@@ -119,10 +132,6 @@
     padding: 11px 0px 11px 50px;
     opacity: 0.8;
     font-weight: bold;
-
-    @include tablet {
-      padding: 11px 0 11px 30px;
-    }
   }
   
   &__description {
@@ -135,10 +144,14 @@
     width: 81%;
 
     @include tablet {
+      font-size: 11px;
+      line-height: 18px;
+      margin-right: auto;
+    }
+
+    @include tablet {
       font-size: 14px;
-      line-height: 19px;
-      margin-left: -56px;
-      width: 115%;
+      width: 100%;
     }
   }
 }

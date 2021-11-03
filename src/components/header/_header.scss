@@ -3,6 +3,27 @@
 .header {
   margin-top: 50px;
 
+  &__mobile-menu {
+    display: none;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #1e0606;
+    transition: 0.5s;
+
+    @include tablet {
+      display: block;
+      align-items: center;
+      margin-left: 40%;
+    }
+
+    @include old-phones {
+      margin-left: 32%;
+    }
+  }
+
   &__logo-link {
     transition: 0.5s;
   }
@@ -44,11 +65,11 @@
     display: flex;
     align-items: center;
   }
-  
+
   &__navigation-item {
     padding-left: 22px;
   }
-  
+
   &__navigation-link {
     font-family: "Open Sans", "Arial", sans-serif;
     font-weight: normal;
@@ -58,12 +79,12 @@
     color: #1e0606;
     transition: 0.5s;
   }
-  
+
   &__navigation-link:hover,
   &__navigation-link:focus {
     opacity: 0.5;
   }
-  
+
   &__navigation-link:active {
     opacity: 0.3;
   }
@@ -73,28 +94,28 @@
   display: flex;
   align-items: center;
   margin-left: auto;
-  
+
   &__search-btn {
     border: none;
     outline: none;
     background: transparent;
     transition: 0.5s;
   }
-  
+
   &__search-btn:hover,
   &__search-btn:focus {
     opacity: 0.5;
     cursor: pointer;
   }
-  
+
   &__search-btn:active {
     opacity: 0.3;
   }
-  
+
   &__search-btn:disabled {
     opacity: 0.1;
   }
-  
+
   &__link {
     font-family: "Open Sans", "Arial", sans-serif;
     font-style: normal;
@@ -114,12 +135,12 @@
       display: none;
     }
   }
-  
+
   &__link:hover,
   &__link:focus {
     opacity: 0.5;
   }
-  
+
   &__link:active {
     opacity: 0.3;
   }

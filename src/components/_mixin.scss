@@ -4,12 +4,18 @@
   }
 }
 @mixin tablet {
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1025px) {
     @content;
   }
 }
 @mixin phones {
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 769px) {
     @content;
   }
 }
+@mixin old-phones {
+  @media screen and (max-width: 440px) {
+    @content;
+  }
+}
+

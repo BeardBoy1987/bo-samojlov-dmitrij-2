@@ -5,4 +5,8 @@
   flex-direction: row;
   margin-top: 36px;
   width: 100%;
+
+  @include tablet {
+    
+  }
 }

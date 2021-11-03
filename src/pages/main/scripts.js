@@ -5,7 +5,7 @@ var popupWindow = document.querySelector(".popup-wrapper");
 var popupCloseButton = document.querySelector(".contact-form__close-btn");
 var inputFocus = popupWindow.querySelector("input");
 
-popupOpenButton.addEventListener("click", function () {
+  popupOpenButton.addEventListener("click", function () {
   popupWindow.classList.add("popup-wrapper--open");
   inputFocus.focus();
 });

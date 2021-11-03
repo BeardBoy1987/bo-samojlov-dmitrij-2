@@ -7,14 +7,23 @@
     margin-top: 60px;
   }
 
+  @include phones {
+    margin-top: 0;
+  }
+
   &__list {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
+
+    @include phones {
+      flex-flow: row wrap;
+    }
   }
   
   &__list-item {
+    margin-top: 30px;
     transition: 0.5s;
   }
 
