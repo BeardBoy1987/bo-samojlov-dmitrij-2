@@ -12,6 +12,16 @@
     text-transform: uppercase;
     color: #1e0606;
     margin-bottom: 15px;
+
+    @include tablet {
+      font-size: 36px;
+      line-height: 44px;
+    }
+
+    @include phones {
+      font-size: 24px;
+      line-height: 30px;
+    }
   }
   
   &__list {
@@ -53,6 +63,11 @@
     line-height: 25px;
     color: #1e0606;
     transition: 0.5s;
+
+    @include phones {
+      font-size: 16px;
+      line-height: 20px;
+    }
   }
   
   &__item-link:hover,

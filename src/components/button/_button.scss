@@ -38,14 +38,15 @@
 &--learn {
   width: 149px;
   margin-top: 10px;
-
-  @include tablet {
-  }
 }
 
 &--submit {
   margin-top: 1px;
   margin-left: 15px;
+
+  @include phones {
+    margin: auto;
+  }
 }
 
 &--apply {

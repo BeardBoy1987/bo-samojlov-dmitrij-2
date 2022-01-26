@@ -1,6 +1,13 @@
 <li class="news__list-item">
   <a class="news__link" href="@@link">
-    <img class="news__img" src="@@img" alt="@@alt" width="380" height="220">
+    <picture>
+      <source srcset="../../static/images/@@img.jpg, ../../static/images/@@img_2x.jpg" media="(min-width: 1025px)">
+      <source srcset="../../static/images/@@img_tablet.jpg, ../../static/images/@@img_tablet_2x.jpg"
+        media="(min-width: 768px) and (max-width: 1024px)">
+      <source srcset="../../static/images/@@img_mobile.jpg, ../..//static/images/@@img_mobile_2x.jpg"
+        media="(max-width: 767px)">
+      <img class="news__img" src="../../static/images/@@img.jpg" alt="@@alt">
+    </picture>
     <p class="news__date">@@date</p>
     <h2 class="news__heading">@@heading</h2>
     <p class="news__content">@@newsContent</p>

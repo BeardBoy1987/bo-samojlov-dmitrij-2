@@ -3,6 +3,14 @@
 .news {
   &__list-item {
     width: 33%;
+
+    @include tablet {
+      width: 50%;
+    }
+
+    @include phones {
+      width: 100%;
+    }
   }
   
   &__img {
@@ -24,6 +32,14 @@
     line-height: 31px;
     color: #1e0606;
     margin-top: -7px;
+
+    @include tablet {
+      width: 90%;
+    }
+
+    @include phones {
+      width: 60%;
+    }
   }
   
   &__link:hover > h2,
@@ -38,5 +54,13 @@
     line-height: 25px;
     color: #1e0606;
     width: 99%;
+
+    @include tablet {
+      width: 70%;
+    }
+
+    @include phones {
+      width: 70%;
+    }
   }
 }

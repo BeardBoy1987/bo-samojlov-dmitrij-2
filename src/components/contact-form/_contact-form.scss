@@ -29,7 +29,11 @@
   padding-bottom: 25px;
 
   @include tablet {
-    left: 43%;
+    left: 50%;
+  }
+
+  @include phones {
+    width: 335px;
   }
 
   &__input-wrap {
@@ -45,6 +49,10 @@
     line-height: 19px;
     color: #1e0606;
     padding-bottom: 3px;
+
+    @include phones {
+      margin-left: -15px;
+    }
   }
 
   &__input {
@@ -58,7 +66,7 @@
     padding: 19px 10px 13px;
     border: 2px solid #c29974;
   }
-  
+
   &__input:disabled {
     background: #ffffff;
     border: 2px solid #ebebeb;
@@ -69,8 +77,14 @@
     height: 50px;
     margin: 0px auto;
     padding: 20px 11px 14px;
+
+    @include phones {
+      width: 285px;
+      height: 40px;
+      margin: auto -17px;
+    }
   }
-  
+
   &__input--name-input::placeholder {
     font-family: "Open Sans", "Arial", sans-serif;
     font-weight: normal;
@@ -83,12 +97,22 @@
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
+
+    @include phones {
+      flex-direction: column;
+    }
   }
 
   &__input--contact-input {
     width: 280px;
     height: 50px;
     padding: 20px 11px 14px;
+
+    @include phones {
+      width: 285px;
+      height: 40px;
+      margin: auto -17px;
+    }
   }
 
   &__textarea {
@@ -99,18 +123,32 @@
     background: #ffffff;
     border: 1px solid rgba(0, 0, 0, 0.2);
     padding: 20px 11px 14px;
+
+    @include phones {
+      width: 285px;
+      height: 150px;
+      margin: auto -17px;
+    }
   }
-  
+
   &__textarea:hover,
   &__textarea:focus {
     background: #ffffff;
     padding: 19px 10px 13px;
     border: 2px solid #c29974;
   }
-  
+
   &__textarea:disabled {
     background: #ffffff;
     border: 2px solid #ebebeb;
+  }
+
+  &__checkbox-agreement {
+    margin-left: 15px;
+
+    @include phones {
+      margin-left: 3px;
+    }
   }
 
   &__close-btn {
@@ -125,8 +163,12 @@
       top: -4%;
       left: 98%;
     }
+
+    @include phones {
+      left: 96%;
+    }
   }
-  
+
   &__close-btn:hover,
   &__close-btn:focus {
     opacity: 0.5;
@@ -145,9 +187,17 @@
   padding-left: 10px;
   padding-bottom: 25px;
 
+  @include phones {
+    width: 335px;
+  }
+
   &__input-wrap {
     display: flex;
     flex-direction: column;
+
+    @include phones {
+      margin-left: -5px;
+    }
   }
 
   &__label {
@@ -157,6 +207,10 @@
     line-height: 19px;
     color: #1e0606;
     padding-bottom: 3px;
+
+    @include phones {
+      margin-left: -5px;
+    }
   }
 
   &__input {
@@ -166,22 +220,28 @@
 
   &__input:hover,
   input:focus {
-  padding: 19px 10px 13px;
-  background: #ffffff;
-  border: 2px solid #c29974;
-}
+    padding: 19px 10px 13px;
+    background: #ffffff;
+    border: 2px solid #c29974;
+  }
 
-&__input:disabled {
-  padding: 19px 10px 13px;
-  background: #ffffff;
-  border: 2px solid #ebebeb;
-}
+  &__input:disabled {
+    padding: 19px 10px 13px;
+    background: #ffffff;
+    border: 2px solid #ebebeb;
+  }
 
   &__input--name-input {
     width: 600px;
     height: 50px;
     margin: 0px auto;
     padding: 20px 11px 14px;
+
+    @include phones {
+      width: 285px;
+      height: 40px;
+      margin: auto -5px;
+    }
   }
 
   &__input--name-input::placeholder {
@@ -195,12 +255,55 @@
   &__contact-info {
     display: flex;
     justify-content: space-between;
-    margin: 0 auto;
+    margin: 0 5px;
+
+    @include phones {
+      flex-direction: column;
+    }
   }
 
   &__input--contact-input {
     width: 280px;
     height: 50px;
     padding: 20px 11px 14px;
+
+    @include phones {
+      width: 285px;
+      height: 40px;
+      margin: auto -10px;
+    }
+  }
+
+  &__textarea {
+    margin: 0 auto;
+    width: 600px;
+    height: 150px;
+    resize: none;
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 20px 11px 14px;
+
+    @include phones {
+      width: 285px;
+      height: 150px;
+      margin: auto -5px;
+    }
+  }
+
+  &__textarea:hover,
+  &__textarea:focus {
+    background: #ffffff;
+    border: 2px solid #c29974;
+  }
+
+  &__textarea:disabled {
+    background: #ffffff;
+    border: 2px solid #ebebeb;
+  }
+
+  &__checkbox-agreement {
+    @include phones {
+      margin-left: -7px;
+    }
   }
 }

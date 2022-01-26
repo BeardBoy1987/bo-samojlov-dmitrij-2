@@ -11,7 +11,12 @@
   }
   
   &__item {
-    padding-left: 70px;
+    margin: 0 auto;
+    padding: 60px;
+
+    @include phones {
+      padding: 50px;
+    }
   }
   
   &__item:first-child &__link {

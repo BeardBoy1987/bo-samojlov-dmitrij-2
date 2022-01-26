@@ -27,7 +27,7 @@
         <textarea class="contact-form__textarea" name="message" id="message"></textarea>
       </fieldset>
 
-      <fieldset class="contact-form__input-wrap">
+      <fieldset class="contact-form__checkbox-agreement">
         @@include('checkbox/index.html', {
           name:"info",
           value:"",
@@ -58,30 +58,31 @@
 
       <fieldset>
         <fieldset class="contact-us-form__input-wrap">
-          <label for="contact-us-form__label">Name</label>
+          <label class="contact-us-form__label" for="contact-us-name">Name</label>
           <input class="contact-us-form__input contact-us-form__input--name-input" placeholder="ivan ivanov" name="name" type="text" id="contact-us-name" />
         </fieldset>
 
         <div class="contact-us-form__contact-info">
           <fieldset class="contact-us-form__input-wrap">
-            <label for="contact-us-form__label">Phone</label>
+            <label class="contact-us-form__label" for="contact-us-phone">Phone</label>
             <input class="contact-us-form__input contact-us-form__input--contact-input" name="phone" type="text" id="contact-us-phone" />
           </fieldset>
 
           <fieldset class="contact-us-form__input-wrap">
-            <label for="contact-us-form__label">Email</label>
+            <label class="contact-us-form__label" for="contact-us-email">Email</label>
             <input class="contact-us-form__input contact-us-form__input--contact-input" name="email" type="text" id="contact-us-email" />
           </fieldset>
         </div>
 
         <fieldset class="contact-us-form__input-wrap">
-          <label for="contact-us-message">Message</label>
-          <textarea name="message" id="contact-us-message"></textarea>
+          <label class="contact-us-form__label" for="contact-us-message">Message</label>
+          <textarea class="contact-us-form__textarea" name="message" id="contact-us-message"></textarea>
         </fieldset>
 
-        <fieldset>
+        <fieldset class="contact-us-form__checkbox-agreement">
           @@include('checkbox/index.html', {
           name:"info",
+          class:"contact-us-checkbox",
           value:"",
           id:"contact-us-agree",
           for:"contact-us-agree",
